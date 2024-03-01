@@ -69,7 +69,7 @@ def create_matrix_M(n_lattice, D, v):
 
     # Off-diagonal elements
     # Loop over each node in the lattice
-    for node in range(n_lattice):
+    for node in range(n_lattice**2):
 
         # Find the neighbors of the current node
         neighbor_dict = get_neighbor_nodes(node, n_lattice)
